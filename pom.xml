@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.rtaylor02</groupId>
-    <artifactId>TDD_KentBeck</artifactId>
+    <artifactId>TDD_Simplified</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>TDD_KentBeck</name>
+    <name>TDD_Simplified</name>
     <url>http://maven.apache.org</url>
 
     <properties>
