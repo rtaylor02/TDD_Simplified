@@ -45,6 +45,32 @@ is the same as:
 
 
 ```
+## (Encouraged) Alternative
+You can also use only 1 dependency with 1 dependency management section (sample working code: [algorithms]("C:\Users\mailb\OneDrive\My Documents\GitHub\algorithms\algorithms")):
+```
+<dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${junit-jupiter.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!-- junit-jupiter includes 3 dependencies: jupiter-engine + jupiter-api + jupiter-params-->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+```
+
 ## No Mockito here
 Different from junit_mockito_min project, mockito dependency is not included in this super simplified version of TDD framework template.
 
